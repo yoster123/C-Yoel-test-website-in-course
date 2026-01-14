@@ -1,0 +1,157 @@
+/* 1. Modern Reset & Design Tokens */
+:root {
+  --bg-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-sub: #64748b;
+  --accent-orange: #f97316;
+  --card-bg: #ffffff;
+  --transition-smooth: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  margin: 0;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 2. Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h1 {
+  h1 {
+  font-family: 'Style Script', cursive; /* Use the new artistic font */
+  font-size: 5rem;                      /* Script fonts usually need to be larger */
+  font-weight: 400;                     /* Script fonts often only have one weight */
+  color: var(--accent-orange);          /* Apply your orange theme color */
+  margin-bottom: 0;
+  letter-spacing: normal;               /* Script fonts don't need tight spacing */
+  line-height: 1.2;
+}
+
+/* Optional: Adjust the subtitle to tuck in nicely under the script font */
+header p {
+  font-size: 1.2rem;
+  color: var(--text-sub);
+  margin-top: -10px; /* Moves the subtitle up slightly to overlap beautifully */
+}
+}
+
+header p {
+  font-size: 1.25rem;
+  color: var(--text-sub);
+  margin-top: 12px;
+}
+
+/* 3. CTA BUTTON STYLE */
+.main-cta {
+  margin-top: 32px;
+  background-color: var(--accent-orange);
+  color: white;
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: var(--transition-smooth);
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2);
+}
+
+.main-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(249, 115, 22, 0.4);
+  background-color: #ea580c;
+}
+
+/* 4. THE BENTO GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* 5. THE CARD STYLE */
+.card {
+  background: var(--card-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 32px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-orange);
+}
+
+/* 6. TEXT INSIDE CARDS */
+.category-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent-orange);
+  margin: 0 0 8px 0;
+}
+
+.card-info h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* 7. IMAGE HANDLING */
+.image-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 220px; /* Limits size on desktop */
+  height: auto;
+  border-radius: 20px;
+  transition: var(--transition-smooth);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* 8. CARD LINKS */
+.card-link {
+  margin-top: 24px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+}
+
+.card:hover .card-link {
+  color: var(--accent-orange);
+}
+
+footer {
+  margin-top: 80px;
+  color: var(--text-sub);
+  font-size: 0.9rem;
+}
