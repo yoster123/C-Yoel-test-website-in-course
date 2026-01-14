@@ -26,28 +26,20 @@ header {
 }
 
 h1 {
-  h1 {
-  font-family: 'Style Script', cursive; /* Use the new artistic font */
-  font-size: 5rem;                      /* Script fonts usually need to be larger */
-  font-weight: 400;                     /* Script fonts often only have one weight */
-  color: var(--accent-orange);          /* Apply your orange theme color */
-  margin-bottom: 0;
-  letter-spacing: normal;               /* Script fonts don't need tight spacing */
-  line-height: 1.2;
-}
-
-/* Optional: Adjust the subtitle to tuck in nicely under the script font */
-header p {
-  font-size: 1.2rem;
-  color: var(--text-sub);
-  margin-top: -10px; /* Moves the subtitle up slightly to overlap beautifully */
-}
+  font-family: 'Style Script', cursive; /* The Artistic Font */
+  font-size: 5.5rem;                   /* Large size for script font impact */
+  font-weight: 400; 
+  color: var(--accent-orange);         /* Title in orange as requested */
+  margin: 0;
+  letter-spacing: normal; 
+  line-height: 1.1;
 }
 
 header p {
   font-size: 1.25rem;
   color: var(--text-sub);
-  margin-top: 12px;
+  margin-top: -10px;                   /* Pulls subtitle up for better visual flow */
+  font-weight: 400;
 }
 
 /* 3. CTA BUTTON STYLE */
@@ -126,7 +118,7 @@ header p {
 
 .card img {
   width: 100%;
-  max-width: 220px; /* Limits size on desktop */
+  max-width: 220px; 
   height: auto;
   border-radius: 20px;
   transition: var(--transition-smooth);
@@ -150,8 +142,16 @@ header p {
   color: var(--accent-orange);
 }
 
+/* 9. FOOTER */
 footer {
   margin-top: 80px;
   color: var(--text-sub);
   font-size: 0.9rem;
+}
+
+/* 10. RESPONSIVE FONT SIZE */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
